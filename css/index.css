@@ -1,0 +1,177 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#D11111;
+/*    background-image:linear-gradient(top, #8C0E0E 0%, #D11111 51%);
+    background-image:-webkit-linear-gradient(top, #8C0E0E 0%, #D11111 51%);
+    background-image:-ms-linear-gradient(top, #8C0E0E 0%, #D11111 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #8C0E0E),
+        color-stop(0.51, #D11111)
+    );
+    background-attachment:fixed;*/
+    /*font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;*/
+    font-family: 'Mountains of Christmas', cursive;
+    font-size:18px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+/* Portrait layout (default) */
+.app {
+    display:none;
+}
+
+.header {
+    background-color:#8C0E0E;
+    height:100px;
+    color:white;
+    line-height:100px;
+    font-size: 80px;
+    padding-left: 10px;
+}
+.exit {
+    display:none;
+    font-family:Arial;
+    position:absolute;
+    top:0;
+    right:0;
+    font-size:80px;
+    line-height:80px;
+    height:100px;
+    width:100px;
+    background-color:green;
+    text-align:center;
+    color:white;
+}
+
+.setup {
+    text-align: center;
+    display: none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.main {
+    display: none;
+}
+
+.save {
+    display: none;
+}
+
+label {
+    font-size: 60px;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+}
+input {
+    height: 55px;
+    width:100%;
+    font-size: 40px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+
+button { 
+    width:100%;
+    height: 55px;
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size:40px;
+    color:white;
+    background-color:green;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    border:1px solid green;
+    text-shadow:0px 1px 0px #2f6627;
+}
+
+button.go {
+    margin-top:60px;
+    height: 80px;
+    font-size:60px;
+    font-weight:bold;
+}
+
+button:disabled{
+    background-color:grey;
+    color:darkgrey;
+    border:1px solid darkgrey;
+    font-style:italic;
+}
+
+.card {
+    display: table;
+}
+.row {
+    display:table-row;
+}
+.square {
+    display: table-cell;
+    font-size:30px;
+    color:white;
+    position:relative;
+    border: 1px solid #8C0E0E;
+}
+
+.square img {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+.square span {
+    position:absolute;
+    z-index: 1;
+    width:100%;
+    text-align:center;
+    top:50%;
+    transform: translateY(-50%);
+}
+/*.win {
+    float:left;
+    width:100%;
+    margin-top:20px;
+}
+.save, .share {
+    margin:0 auto;
+    margin-top:20px;
+    display:block;
+    width: 50%;
+}*/
