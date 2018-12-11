@@ -28,27 +28,27 @@ var card = {
     "1_2":{word:null,checked:false},
     "1_3":{word:null,checked:false},
     "1_4":{word:null,checked:false},
-    //"1_5":{word:null,checked:false},
+    "1_5":{word:null,checked:false},
     "2_1":{word:null,checked:false},
     "2_2":{word:null,checked:false},
     "2_3":{word:null,checked:false},
     "2_4":{word:null,checked:false},
-    //"2_5":{word:null,checked:false},
+    "2_5":{word:null,checked:false},
     "3_1":{word:null,checked:false},
     "3_2":{word:null,checked:false},
     "3_3":{word:null,checked:true},
     "3_4":{word:null,checked:false},
-    //"3_5":{word:null,checked:false},
+    "3_5":{word:null,checked:false},
     "4_1":{word:null,checked:false},
     "4_2":{word:null,checked:false},
     "4_3":{word:null,checked:false},
-    "4_4":{word:null,checked:false}
-    //"4_5":{word:null,checked:false},
-    //"5_1":{word:null,checked:false},
-    //"5_2":{word:null,checked:false},
-    //"5_3":{word:null,checked:false},
-    //"5_4":{word:null,checked:false},
-    //"5_5":{word:null,checked:false}
+    "4_4":{word:null,checked:false},
+    "4_5":{word:null,checked:false},
+    "5_1":{word:null,checked:false},
+    "5_2":{word:null,checked:false},
+    "5_3":{word:null,checked:false},
+    "5_4":{word:null,checked:false},
+    "5_5":{word:null,checked:false}
 };
 
 var app = {
@@ -130,7 +130,7 @@ function makeCard(){
     var category = 'holiday_movies';
     var word_list = [];
     //get our randomly generated list of words for the card
-    while (word_list.length < 16) {
+    while (word_list.length < 25) {
         var new_word = assets[category][Math.floor(Math.random() * assets[category].length)];
         if (word_list.indexOf(new_word)===-1){
             word_list.push(new_word);
